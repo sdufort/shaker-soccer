@@ -5,18 +5,19 @@ import styled from "styled-components";
 export const Content = styled(props => <div {...props} />)`
   display: flex;
   width: 100vw;
-  height: calc(80vh - 48px);
+  height: calc(85vh - 48px);
   overflow-y: scroll;
 `;
 
 export const Header = styled(props => <div {...props} />)`
   display: flex;
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   justify-content: center;
   align-items: center;
+  background: #ffffff;
   color: #003594;
-  font-size: 6vw;
+  font-size: 4vw;
   font-style: italic;
 `;
 

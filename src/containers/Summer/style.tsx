@@ -1,7 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-export const ScheduleContainer = styled(props => <div {...props} />)`
+export const NoData = styled(props => <div {...props} />)`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  background: #ffffff;
+  font-style: italic;
+`;
+
+export const SummerContainer = styled(props => <div {...props} />)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +19,7 @@ export const ScheduleContainer = styled(props => <div {...props} />)`
   width: -webkit-fill-available;
   height: fit-content;
   margin: 50px;
+  background: #282c34;
 `;
 
 export const TableContainer = styled(props => <div {...props} />)`

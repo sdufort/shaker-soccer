@@ -29,7 +29,9 @@ export const StyledTableRow = styled(props => <TableRow {...props} />)`
 export const StyledTableHeadCell = styled(props => <TableCell {...props} />)`
   display: flex;
   color: #000000 !important;
-  border-bottom: 2px solid #003594 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border-bottom: 3px solid #003594 !important;
 `;
 export const StyledTableBodyCell = styled(props => <TableCell {...props} />)`
   display: flex;

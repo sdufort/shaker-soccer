@@ -1,6 +1,6 @@
 import React from "react";
 import ShakerTable from "../../components/ShakerTable";
-import { RosterContainer } from "./style";
+import { NoData, RosterContainer, TableContainer, Title } from "./style";
 
 const rosterColumns = [
   {
@@ -24,7 +24,11 @@ const rosterColumns = [
 const Roster: React.FC = () => {
   return (
     <RosterContainer>
-      <ShakerTable columns={rosterColumns} data={[]} />
+      <Title>2019 Varsity Roster</Title>
+      <TableContainer>
+        <ShakerTable columns={rosterColumns} data={[]} />
+      </TableContainer>
+      <NoData>Roster has not been released</NoData>
     </RosterContainer>
   );
 };

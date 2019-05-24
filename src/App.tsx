@@ -5,6 +5,9 @@ import { ThemeProvider } from "@material-ui/styles";
 import Home from "./containers/Home";
 import Roster from "./containers/Roster";
 import Schedule from "./containers/Schedule";
+import Stats from "./containers/Stats";
+import Summer from "./containers/Summer";
+import Tryouts from "./containers/Tryouts";
 import { theme } from "./theme/mui-theme";
 import bison from "./bison.png";
 import logo from "./logo.svg";
@@ -68,10 +71,10 @@ const App: React.FC = () => {
                   to="/tryouts"
                 />
                 <Tab
-                  value="program"
-                  label="Program"
+                  value="summer"
+                  label="Summer"
                   component={Link}
-                  to="/program"
+                  to="/summer"
                 />
               </Tabs>
             </RightTabs>
@@ -82,9 +85,9 @@ const App: React.FC = () => {
             <Route exact path="/" component={Home} />
             <Route exact path="/schedule" component={Schedule} />
             <Route exact path="/roster" component={Roster} />
-            <Route exact path="/stats" component={Home} />
-            <Route exact path="/tryouts" component={Home} />
-            <Route exact path="/program" component={Home} />
+            <Route exact path="/stats" component={Stats} />
+            <Route exact path="/tryouts" component={Tryouts} />
+            <Route exact path="/summer" component={Summer} />
             <Redirect to="/" />
           </Switch>
         </Content>
